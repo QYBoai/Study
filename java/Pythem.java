@@ -1,42 +1,42 @@
 	/*
-	 * ±¾³ÌĞòÊÇÓÃÓÚ»¨Ñù¼ÆËã¹´¹ÉÊıµÄ
-	 * ¹ØÓÚ¹´¹ÉÊı£¬²»¶®Çë×ÔĞĞ°Ù¶È
+	 * æœ¬ç¨‹åºæ˜¯ç”¨äºèŠ±æ ·è®¡ç®—å‹¾è‚¡æ•°çš„
+	 * å…³äºå‹¾è‚¡æ•°ï¼Œä¸æ‡‚è¯·è‡ªè¡Œç™¾åº¦
 	 * 
-	 * ×¢£º³ÌĞòÖĞµÄ¼ÆËã¹«Ê½ÓÉ¸ßÖ÷ÈÎÌá¹©
+	 * æ³¨ï¼šç¨‹åºä¸­çš„è®¡ç®—å…¬å¼ç”±é«˜ä¸»ä»»æä¾›
 	 * 
-	 * È±µã£º²»ÄÜ¼ÆËãĞ¡Êı(¸¡µãÊı)
+	 * ç¼ºç‚¹ï¼šä¸èƒ½è®¡ç®—å°æ•°(æµ®ç‚¹æ•°)
 	 */
 
-import java.util.Scanner;	//µ¼Èëjava.util°üÖĞµÄScannerÀà	×¢£ºScannerÒëÎª"É¨ÃèÒÇ"
+import java.util.Scanner;	//å¯¼å…¥java.utilåŒ…ä¸­çš„Scannerç±»	æ³¨ï¼šScannerè¯‘ä¸º"æ‰«æä»ª"
 
 public class Pythem {
 	public static void main(String[] args) {
-		System.out.println("¹´¹ÉÊı¼ÆËã");
-		Scanner input=new Scanner(System.in);	//´´½¨Ò»¸öÃûÎªinputµÄ¶ÔÏó
+		System.out.println("å‹¾è‚¡æ•°è®¡ç®—");
+		Scanner input=new Scanner(System.in);	//åˆ›å»ºä¸€ä¸ªåä¸ºinputçš„å¯¹è±¡
 		
-		while (true){	//whileËÀÑ­»·ÓÃÓÚ¶à´Î½øĞĞÔËËã
+		while (true){	//whileæ­»å¾ªç¯ç”¨äºå¤šæ¬¡è¿›è¡Œè¿ç®—
 			System.out.println();
-			System.out.print("ÇëÊäÈëÖ±½ÇÈı½ÇĞÎÖĞµÄÖ±½Ç±ßa£º");	//ÌáÊ¾ÓÃ»§ÊäÈëĞÅÏ¢
-			int a=input.nextInt();	//½ÓÊÕ¶ÌÖ±½Ç±ßÊıÖµ
-			int b = 0, c = 0;	//¶¨Òå³¤Ö±½Ç±ßÒÔ¼°Ğ±±ß
+			System.out.print("è¯·è¾“å…¥ç›´è§’ä¸‰è§’å½¢ä¸­çš„ç›´è§’è¾¹aï¼š");	//æç¤ºç”¨æˆ·è¾“å…¥ä¿¡æ¯
+			int a=input.nextInt();	//æ¥æ”¶çŸ­ç›´è§’è¾¹æ•°å€¼
+			int b = 0, c = 0;	//å®šä¹‰é•¿ç›´è§’è¾¹ä»¥åŠæ–œè¾¹
 			
-			if (a < 3){	//ÅĞ¶Ï¶ÌÖ±½Ç±ßaÊÇ·ñ·ûºÏÒªÇó
-				System.out.println("Êı¾İ´íÎó£ºÖ±½Ç±ßa¹ıĞ¡");
-				continue;	//Ö±½Ó½øĞĞÏÂÒ»´ÎÑ­»·
-			}	else if (a % 2 == 0){	//ÅĞ¶Ï¶ÌÖ±½Ç±ßÊÇÆæÊı»¹ÊÇÅ¼Êı
-				int n = a / 2;	//µ±Ê±Îª·½±ãË¼¿¼£¬ÔöÉè´Ë±äÁ¿ÒÔ±ãÓÚ¼ÆËã
+			if (a < 3){	//åˆ¤æ–­çŸ­ç›´è§’è¾¹aæ˜¯å¦ç¬¦åˆè¦æ±‚
+				System.out.println("æ•°æ®é”™è¯¯ï¼šç›´è§’è¾¹aè¿‡å°");
+				continue;	//ç›´æ¥è¿›è¡Œä¸‹ä¸€æ¬¡å¾ªç¯
+			}	else if (a % 2 == 0){	//åˆ¤æ–­çŸ­ç›´è§’è¾¹æ˜¯å¥‡æ•°è¿˜æ˜¯å¶æ•°
+				int n = a / 2;	//å½“æ—¶ä¸ºæ–¹ä¾¿æ€è€ƒï¼Œå¢è®¾æ­¤å˜é‡ä»¥ä¾¿äºè®¡ç®—
 				b = (n * n) - 1;
 				c = (n * n) + 1;
-				System.out.println("***Ö±½Ç±ßaÎª£º"+a);
-				System.out.println("***Ö±½Ç±ßbÎª£º"+b);
-				System.out.println("***Ğ±±ßcÎª£º"+c);
+				System.out.println("***ç›´è§’è¾¹aä¸ºï¼š"+a);
+				System.out.println("***ç›´è§’è¾¹bä¸ºï¼š"+b);
+				System.out.println("***æ–œè¾¹cä¸ºï¼š"+c);
 			}	else if (a % 2 == 1){
-				int m = (a - 1) / 2;	//ÓÃÍ¾Í¬±äÁ¿n
+				int m = (a - 1) / 2;	//ç”¨é€”åŒå˜é‡n
 				b = (m * 2)*(m + 1);
 				c = b + 1;
-				System.out.println("***Ö±½Ç±ßaÎª£º"+a);
-				System.out.println("***Ö±½Ç±ßbÎª£º"+b);
-				System.out.println("***Ğ±±ßcÎª£º"+c);
+				System.out.println("***ç›´è§’è¾¹aä¸ºï¼š"+a);
+				System.out.println("***ç›´è§’è¾¹bä¸ºï¼š"+b);
+				System.out.println("***æ–œè¾¹cä¸ºï¼š"+c);
 			}
 		}
 	}
